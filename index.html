@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit Haus | Social Media + Creator Marketing Studio</title>
+<meta name="description" content="Edit Haus is a social media management + creator marketing studio. Hooks, content, creators and ads, built around what actually sells, so your brand feels worth following.">
+<meta property="og:url" content="https://caitlynpalsson.github.io/edit-haus-site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Edit Haus">
+<meta property="og:title" content="Edit Haus | Social Media + Creator Marketing Studio">
+<meta property="og:description" content="Two strategists, one haus. Social media management, creator &amp; UGC, TikTok Shop and paid ads, built around what actually sells. Make your brand feel worth following.">
+<meta property="og:image" content="https://caitlynpalsson.github.io/edit-haus-site/assets/post-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Edit Haus | Social Media + Creator Marketing Studio">
+<meta name="twitter:description" content="Two strategists, one haus. Make your brand feel worth following.">
+<meta name="twitter:image" content="https://caitlynpalsson.github.io/edit-haus-site/assets/post-1.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF7F2; --blush:#E9A9B9; --pale:#F5E2E7; --pink:#D07C98; --ink:#171717; --taupe:#D9D1CB; --grey:#6E6863;
+  --sans:"Helvetica Neue",Helvetica,"Nimbus Sans","Nimbus Sans L",Arial,sans-serif;
+  --serif:"Playfair Display","Playfair Display Italic",Georgia,serif;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+.h{font-weight:800;text-transform:uppercase;letter-spacing:-.03em;line-height:.9}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--pink);text-transform:none;letter-spacing:0}
+.kick{font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);text-decoration:none;font-family:var(--serif);font-size:15px;letter-spacing:.12em;padding:12px 30px;border-radius:2px;transition:transform .15s,background .15s}
+.btn:hover{background:var(--pink);transform:translateY(-2px)}
+.mono{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--blush);color:var(--cream);font-family:var(--serif);font-style:italic;line-height:1}
+.ph{background:var(--pale);border:1.5px dashed var(--blush);color:var(--pink);font-family:var(--serif);font-style:italic;display:flex;align-items:center;justify-content:center;text-align:center}
+
+/* HERO */
+.hero{background:var(--pale);padding:28px 0 0;position:relative;overflow:hidden}
+.nav{display:flex;align-items:center;justify-content:center;gap:clamp(12px,3.2vw,44px);border:1.5px solid var(--ink);border-radius:999px;padding:13px 34px;max-width:880px;margin:0 auto;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:rgba(251,247,242,.35)}
+.nav a{text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent}
+.nav a:hover{border-color:var(--ink)}
+.brandbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.brandbar .lock{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2em;font-size:13px;text-decoration:none}
+.brandbar .mono{width:44px;height:44px;font-size:19px}
+.brandbar .ig{font-size:12px;letter-spacing:.16em;text-decoration:none;font-weight:700}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;align-items:center;gap:clamp(20px,4vw,60px);padding-top:clamp(24px,4vw,56px)}
+.collage{position:relative;height:clamp(380px,46vw,560px);align-self:end}
+.collage .card{position:absolute;border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -14px rgba(120,60,80,.35);border:6px solid var(--cream);background:var(--cream)}
+.collage .c1{width:48%;left:-1%;bottom:14%;transform:rotate(-6deg);z-index:1}
+.collage .c2{width:54%;left:32%;bottom:-4%;transform:rotate(4deg);z-index:3}
+.collage .c3{width:46%;left:24%;top:2%;transform:rotate(-1.5deg);z-index:2}
+.collage .mono{position:absolute;right:6%;top:6%;width:clamp(70px,9vw,112px);height:clamp(70px,9vw,112px);font-size:clamp(30px,4vw,48px);z-index:4;box-shadow:0 10px 24px -8px rgba(160,70,100,.5)}
+.hero-txt{padding-bottom:clamp(30px,5vw,70px)}
+.hero-txt .kick{color:var(--grey);margin-bottom:18px}
+.hero h1{font-size:clamp(76px,11.5vw,158px);position:relative}
+.hero h1 .it{position:absolute;left:16%;bottom:-.5em;font-size:.3em;white-space:nowrap;transform:rotate(-4deg);font-weight:500}
+.hero-sub{margin-top:clamp(64px,7vw,96px);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;line-height:1.9}
+.hero-sub span{display:block;font-weight:400;color:var(--grey);letter-spacing:.18em}
+.hero-tag{font-family:var(--serif);font-style:italic;color:var(--pink);font-size:clamp(20px,2.2vw,26px);margin:18px 0 26px}
+
+/* VALUES */
+.values{padding:clamp(48px,6vw,84px) 0;border-bottom:1px solid var(--taupe)}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px);text-align:center}
+.vgrid svg{width:46px;height:46px;stroke:var(--pink);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 16px}
+.vgrid h3{font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.vgrid p{font-size:14px;color:#3b3734;max-width:300px;margin:0 auto}
+
+/* WHERE BEAUTIFUL */
+.where{padding:clamp(56px,7vw,110px) 0}
+.where-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px);align-items:center}
+.where h2{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--pink);font-size:clamp(40px,5.6vw,76px);line-height:1.02;margin-bottom:28px}
+.where p{font-size:15px;max-width:480px;margin-bottom:16px;color:#2c2927}
+.journal{position:relative;background:#fff;border:1px solid var(--taupe);border-radius:6px 0 0 6px;padding:clamp(28px,4vw,52px) clamp(28px,4vw,56px) clamp(28px,4vw,52px) clamp(24px,3.5vw,48px);box-shadow:0 24px 50px -24px rgba(90,60,60,.35);margin-right:22px;transform:rotate(1.2deg)}
+.journal .rings{position:absolute;right:-22px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:space-around;padding:36px 0}
+.journal .rings i{display:block;width:44px;height:16px;border-radius:12px;background:linear-gradient(#e8e4e0,#9b9591 55%,#d9d4d0);box-shadow:0 2px 3px rgba(0,0,0,.25)}
+.journal .eh{font-size:11px;letter-spacing:.3em;color:var(--grey);text-align:center;margin-bottom:22px}
+.journal h4{font-size:clamp(30px,3.8vw,46px)}
+.journal h4 .it{display:block;font-size:.62em;margin-top:2px}
+.journal ul{list-style:none;margin:24px 0 20px}
+.journal li{font-family:var(--serif);font-style:italic;color:var(--pink);font-size:clamp(15px,1.6vw,18px);padding:7px 0;border-bottom:1px solid var(--pale)}
+.journal li:before{content:"– ";}
+.journal .cl{font-size:12px;color:var(--grey);margin-top:20px}
+
+/* STRUGGLING */
+.struggle{background:var(--blush);position:relative;overflow:hidden}
+.st-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,80px);align-items:center;padding-top:clamp(52px,7vw,96px);padding-bottom:clamp(52px,7vw,96px)}
+.struggle .it{color:var(--cream);font-size:clamp(26px,3vw,38px);transform:rotate(-4deg);display:inline-block;margin-bottom:22px}
+.struggle h2{font-size:clamp(46px,7.2vw,96px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chips span{border:1.5px solid var(--ink);border-radius:999px;padding:6px 14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;background:rgba(251,247,242,.45)}
+.struggle .btn{margin-top:28px}
+.st-img{justify-self:center;width:min(300px,100%);transform:rotate(3deg)}
+.st-img img{border-radius:22px;border:7px solid var(--cream);box-shadow:0 26px 50px -20px rgba(120,40,70,.55)}
+
+/* WHO IS SHE */
+.who{padding:clamp(60px,7vw,110px) 0 clamp(40px,5vw,70px)}
+.sec-title{text-align:center;margin-bottom:clamp(36px,5vw,64px)}
+.sec-title .it{font-size:clamp(40px,5.4vw,70px);line-height:1.05;display:block}
+.sec-title p{color:var(--grey);font-size:14px;margin-top:8px}
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px)}
+.profile{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:start}
+.profile .pic{aspect-ratio:4/5;border-radius:4px;font-size:18px;position:relative}
+.profile .pic img{display:block;width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:4px;border:1px solid var(--taupe);box-shadow:0 14px 26px -20px rgba(0,0,0,.35)}
+.profile .pic small{display:block;font-size:12px;opacity:.85;margin-top:2px;font-family:var(--sans);font-style:normal;letter-spacing:.1em}
+.profile .who-q{font-family:var(--serif);font-weight:600;font-size:15px;letter-spacing:.14em;text-transform:uppercase;text-align:center;margin-top:12px;color:var(--ink)}
+.fields{padding-top:2px}
+.fields dt{font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-top:12px}
+.fields dd{font-family:var(--serif);font-style:italic;color:var(--pink);font-size:17px;line-height:1.25;border-bottom:1.5px solid var(--ink);padding:3px 0 5px;min-height:34px}
+.fields dd.todo{color:#b8a0a8;border-bottom-style:dashed;border-bottom-color:var(--blush)}
+.bio{grid-column:1/-1;min-height:5.2em;font-size:14px;text-align:center;max-width:520px;margin:6px auto 0;color:#2c2927}
+.bio b{color:var(--pink);font-family:var(--serif);font-style:italic;font-weight:400}
+.who .lets{text-align:center;margin-top:clamp(34px,5vw,56px)}
+.who .lets .it{font-size:clamp(28px,3vw,38px)}
+
+/* STORY STRIP */
+.strip{padding:clamp(20px,3vw,40px) 0 clamp(50px,6vw,90px)}
+.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2vw,24px)}
+.strip-grid figure{border:1.5px solid var(--ink);border-radius:22px;padding:6px;background:#fff}
+.strip-grid img{border-radius:16px;width:100%;aspect-ratio:9/16;object-fit:cover}
+
+/* VISUAL IDENTITY */
+.vi{background:#fff;padding:clamp(56px,7vw,100px) 0 clamp(60px,7vw,110px);border-top:1px solid var(--taupe)}
+.vi-top{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,80px);align-items:center;max-width:820px;margin:0 auto clamp(46px,6vw,80px)}
+.vi-top h2{font-size:clamp(46px,6.4vw,84px)}
+.vi-top p{font-size:15px;font-weight:600;max-width:300px;line-height:1.5}
+.quote{text-align:center;font-family:var(--serif);font-style:italic;color:var(--pink);font-size:clamp(30px,4.4vw,56px);line-height:1.15;max-width:760px;margin:0 auto clamp(50px,6vw,90px)}
+.quote b{font-weight:500;border-bottom:3px solid var(--blush)}
+.ba-title{text-align:center;font-family:var(--serif);font-size:clamp(15px,1.6vw,19px);letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:34px}
+.ba{display:grid;grid-template-columns:1fr minmax(220px,300px) 1fr;gap:clamp(16px,3vw,48px);align-items:center;max-width:1000px;margin:0 auto}
+.ba figure{text-align:center}
+.ba figcaption{font-family:var(--serif);font-weight:600;letter-spacing:.14em;margin-top:26px;font-size:16px}
+.ba figcaption small{display:block;font-weight:400;font-style:italic;letter-spacing:0;color:var(--pink);font-size:12px;margin-top:3px}
+.phone{width:min(270px,100%);margin:0 auto;border:7px solid var(--ink);border-radius:32px;background:#fff;padding:14px 10px 10px;position:relative;box-shadow:0 30px 24px -26px rgba(0,0,0,.4)}
+.phone:before{content:"";position:absolute;top:6px;left:50%;width:46px;height:5px;border-radius:5px;background:var(--ink);transform:translateX(-50%)}
+.pf{display:flex;align-items:center;gap:8px;margin:8px 4px 6px}
+.pf .av{width:38px;height:38px;border-radius:50%;flex:none}
+.pf .st{flex:1;display:flex;justify-content:space-around}
+.pf .st i{display:block;width:18px;height:6px;border-radius:3px;background:#d9d6d3}
+.bar{height:6px;border-radius:3px;background:#d9d6d3;margin:5px 4px}
+.hl{display:flex;gap:8px;margin:9px 4px}
+.hl i{width:24px;height:24px;border-radius:50%;display:block}
+.phone .scr{display:block;width:100%;height:auto;border-radius:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:8px}
+.grid3 i,.grid3 img{aspect-ratio:1;width:100%;object-fit:cover;object-position:top;display:block}
+.before .av{background:#b9b3a8}.before .bar{background:#cfc9c0}.before .hl i{background:#c4bcae}
+.after .av{background:var(--blush)}.after .bar{background:var(--pale)}.after .hl i{background:var(--pale);border:1.5px solid var(--blush)}
+.checks{list-style:none;text-align:center}
+.checks li{font-size:13px;padding:7px 0;position:relative}
+.checks li:before{content:"✓ ";color:var(--pink);font-weight:700}
+.checks .note{font-family:var(--serif);font-style:italic;color:var(--pink);font-size:14px;margin-top:16px;line-height:1.5}
+.ph-flag{display:inline-block;margin-top:34px;font-size:11px;font-family:var(--serif);font-style:italic;color:var(--pink);border:1px dashed var(--blush);border-radius:999px;padding:4px 14px}
+
+/* CONTENT */
+.content{padding:clamp(60px,7vw,110px) 0 clamp(70px,8vw,120px)}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.6vw,22px)}
+.cgrid img{border-radius:4px;width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--taupe)}
+.cbottom{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:center;margin-top:clamp(30px,4vw,56px)}
+.cbottom h3{font-size:clamp(26px,3vw,36px);margin-bottom:14px}
+.cbottom p{font-size:14px;color:#2c2927;max-width:480px}
+.circles{display:flex;justify-content:center;margin-top:30px}
+.circles div{width:clamp(116px,13vw,150px);aspect-ratio:1;border:1.5px solid var(--ink);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.circles div+div{margin-left:-18px}
+.circles b{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,42px);color:var(--pink);line-height:1}
+.circles span{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;margin-top:6px;font-weight:700}
+.cbottom .pic{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cbottom .pic img{aspect-ratio:4/5;object-fit:cover;width:100%;border-radius:4px;border:1px solid var(--taupe)}
+
+/* TICKER */
+.ticker-zone{height:150px;position:relative;overflow:hidden;margin:-40px 0}
+.ticker{position:absolute;left:-5%;width:110%;top:50px;background:var(--blush);color:var(--cream);transform:rotate(-2.6deg);overflow:hidden;border-top:2px solid var(--pink);border-bottom:2px solid var(--pink);box-shadow:0 8px 20px -10px rgba(150,60,90,.5)}
+.ticker .track{display:flex;width:max-content;animation:tick 28s linear infinite;padding:14px 0}
+.ticker span{font-weight:800;font-size:15px;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;padding:0 14px}
+.ticker span i{font-family:var(--serif);color:var(--ink);padding-left:28px;font-style:italic;letter-spacing:0}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}}
+
+/* SERVICES */
+.services{padding:clamp(80px,9vw,130px) 0 clamp(50px,6vw,90px);background:var(--cream)}
+.services .intro{text-align:center;max-width:620px;margin:0 auto clamp(34px,4vw,56px);font-size:15px;color:#2c2927}
+.sub-h{display:flex;align-items:center;gap:18px;margin:clamp(34px,4vw,54px) 0 24px}
+.sub-h h3{font-size:clamp(26px,3.4vw,42px);white-space:nowrap}
+.sub-h h3 .it{margin-left:8px}
+.sub-h:after{content:"";flex:1;height:1.5px;background:var(--ink)}
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2.4vw,30px);align-items:stretch}
+.svc{border:1.5px solid var(--ink);background:#fff;padding:clamp(22px,2.6vw,34px);display:flex;flex-direction:column}
+.sgrid.cols{display:block;column-count:2;column-gap:clamp(16px,2.4vw,30px)}
+.sgrid.cols .svc{break-inside:avoid;margin-bottom:clamp(16px,2.4vw,30px)}
+.svc.wide{grid-column:1/-1}
+.svc.feat{background:var(--pale);margin-top:clamp(8px,1.5vw,18px)}
+.svc.feat .svc-h h3{flex:1 1 220px}
+.svc.feat .desc{font-size:14px;line-height:1.5;max-width:560px;margin-bottom:18px}
+.svc.feat .plist{flex:none;margin-bottom:22px}
+.svc-h{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.svc-h .num{font-family:var(--serif);font-style:italic;color:var(--pink);font-size:28px;line-height:1}
+.svc-h h3{font-size:clamp(18px,1.9vw,23px);font-weight:800;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;flex:1;min-width:160px}
+.svc-h .tag{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--pink);border:1px solid var(--blush);border-radius:999px;padding:2px 12px;white-space:nowrap}
+.plist{list-style:none;flex:1;margin-bottom:22px}
+.plist li{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-bottom:1px dotted var(--taupe);font-size:13.5px;line-height:1.4}
+.plist .pr{font-weight:800;white-space:nowrap}
+.plist .pr small{font-weight:400;color:var(--grey);font-size:11px;margin-left:2px}
+.ogrid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(24px,4vw,60px);margin-bottom:22px}
+.og h4{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--pink);font-size:18px;margin:14px 0 2px}
+.og .plist{margin-bottom:6px}
+.svc .btn{align-self:flex-start;transform:rotate(-1deg)}
+.svc .btn:hover{transform:rotate(-1deg) translateY(-2px)}
+.custom{margin-top:clamp(30px,4vw,50px);background:var(--pale);border-radius:4px;padding:clamp(26px,3.4vw,44px);text-align:center}
+.custom .it{font-size:clamp(28px,3.4vw,42px);line-height:1.1;display:block;margin-bottom:8px}
+.custom p{font-size:14px;max-width:520px;margin:0 auto 20px}
+.terms{margin-top:22px;text-align:center;font-size:12.5px;color:var(--grey);letter-spacing:.04em}
+.terms em{font-family:var(--serif);color:var(--pink)}
+.todo-tag{font-family:var(--serif);font-style:italic;color:var(--pink);font-size:12px;border:1px dashed var(--blush);border-radius:999px;padding:1px 10px;margin-left:6px;white-space:nowrap}
+
+/* FOOTER */
+.contact{background:var(--blush);padding:clamp(60px,7vw,100px) 0 0;text-align:center;position:relative}
+.contact .mono{background:var(--cream);color:var(--pink);width:84px;height:84px;font-size:38px;margin-bottom:22px}
+.contact h2{font-size:clamp(40px,6vw,80px)}
+.contact h2 .it{display:block;color:var(--cream);font-size:.78em;margin-top:4px}
+.contact p.s{font-size:14px;margin:18px auto 26px;max-width:420px}
+.contact .links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:26px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.contact .links a{text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(44px,5vw,80px);padding:20px 0 26px;border-top:1px solid rgba(23,23,23,.25);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+
+/* TABLET / MOBILE */
+@media (max-width:900px){
+  .hero-grid,.where-grid,.st-grid,.cbottom{grid-template-columns:1fr}
+  .collage{order:2;height:clamp(340px,80vw,480px);max-width:520px;width:100%;margin:0 auto}
+  .hero-txt{padding-bottom:0}
+  .hero h1{font-size:clamp(84px,24vw,150px)}
+  .who-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  .vgrid{grid-template-columns:1fr;gap:34px}
+  .ba{grid-template-columns:1fr;gap:40px}
+  .ba .mid{order:3}
+  .vi-top{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .sgrid,.ogrid{grid-template-columns:1fr}
+  .sgrid.cols{column-count:1}
+  .st-img{width:min(240px,70%)}
+  .cgrid{grid-template-columns:repeat(2,1fr)}
+  .strip-grid{grid-template-columns:repeat(2,1fr)}
+  .journal{margin-right:22px}
+}
+@media (max-width:560px){
+  .nav{gap:9px;padding:11px 12px;font-size:9.5px;letter-spacing:.07em}
+  .brandbar .ig{display:none}
+  .profile{grid-template-columns:1fr 1.15fr;gap:14px}
+  .fields dd{font-size:15px}
+  .plist li{flex-direction:column;gap:2px}
+  .ticker span{font-size:12px}
+  .sub-h h3{white-space:normal}
+  .hero-sub{font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="lock" href="#top"><span class="mono">EH</span><span>EDIT HAUS</span></a>
+      <a class="ig" href="https://www.instagram.com/the____edithaus/" target="_blank" rel="noopener">@THE____EDITHAUS</a>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#content">Content</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="hero-grid">
+      <div class="collage" aria-hidden="false">
+        <div class="card c3"><img src="assets/post-3.jpg" alt="Edit Haus post: people aren't scrolling for you, they're searching for you"></div>
+        <div class="card c1"><img src="assets/post-1.jpg" alt="Edit Haus post: your first 3 seconds are a job interview"></div>
+        <div class="card c2"><img src="assets/post-we-did-a-thing.jpg" alt="Edit Haus post: we did a thing, client no. one"></div>
+        <span class="mono">EH</span>
+      </div>
+      <div class="hero-txt">
+        <p class="kick">Social + creator marketing studio</p>
+        <h1 class="h">Edit<br>Haus<span class="it">with caty &amp; hannah</span></h1>
+        <p class="hero-sub">Social media management &amp; creator marketing<span>by Caty Palsson + Hannah Folkers</span></p>
+        <p class="hero-tag">make your brand feel worth following.</p>
+        <a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ VALUE PROPS ============ -->
+<section class="values" id="about">
+  <div class="wrap vgrid">
+    <div>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="19" r="11"/><path d="M17 28l-4 15 11-6 11 6-4-15"/><path d="M24 13l2 4 4.5.6-3.3 3.1.8 4.4-4-2.1-4 2.1.8-4.4-3.3-3.1 4.5-.6z"/></svg>
+      <h3>Proven expertise</h3>
+      <p>Two strategists, one haus. Hooks, content, creators and ads, built around what actually sells for your brand.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41S6 30 6 17.5C6 11.7 10.4 8 15.4 8c3.5 0 6.6 2 8.6 5 2-3 5.1-5 8.6-5C37.6 8 42 11.7 42 17.5 42 30 24 41 24 41z"/></svg>
+      <h3>Personalized care</h3>
+      <p>No cookie-cutter calendars. Every brand gets a point of view shaped around its voice, its goals and its dream customer.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 21v20H8V21z"/><path d="M16 21l7-14c3 0 5 2 5 5v6h10c2.5 0 4.3 2.2 3.9 4.6l-2.3 14.2c-.4 2.2-2.3 3.8-4.5 3.8H16"/></svg>
+      <h3>Results that matter</h3>
+      <p>More than just pretty posts. We build content that earns the follow, the click and the sale, then we report on what's working.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHERE BEAUTIFUL CONTENT MEETS ============ -->
+<section class="where">
+  <div class="wrap where-grid">
+    <div>
+      <h2>where beautiful content meets business growth</h2>
+      <p>Your social media is more than a place to post. It's your brand's first impression. Thoughtful, good-looking content builds credibility, creates connection and turns casual scrollers into customers.</p>
+      <p>When your content looks intentional, your audience notices. A cohesive, elevated presence makes your brand recognizable and gives people the confidence to shop with you. Because beautiful content doesn't just catch attention. It helps drive sales.</p>
+    </div>
+    <div class="journal">
+      <div class="rings"><i></i><i></i><i></i></div>
+      <p class="eh kick">( EH )</p>
+      <h4 class="h">The visuals<span class="it">are the voice.</span></h4>
+      <ul>
+        <li>graphics that stop the scroll</li>
+        <li>posts that feel alive</li>
+        <li>cohesive feeds that build trust</li>
+        <li>templates that save time</li>
+      </ul>
+      <p class="cl">When you create content clearly, your audience will listen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRUGGLING ============ -->
+<section class="struggle">
+  <div class="wrap st-grid">
+    <div>
+      <span class="it">we can help with that!</span>
+      <h2 class="h">Struggling with running all your socials?</h2>
+      <div class="chips"><span>Strategy</span><span>Posting</span><span>Editing</span><span>Creators</span><span>Ads</span><span>Community</span></div>
+      <a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a>
+    </div>
+    <div class="st-img"><img src="assets/story-dm-us.jpg" alt="Edit Haus story: your brand could be next. DM us HAUS"></div>
+  </div>
+</section>
+
+<!-- ============ WHO IS SHE ============ -->
+<section class="who">
+  <div class="wrap">
+    <div class="sec-title"><span class="it">meet the haus</span><p>two brains. one haus. (fill-in-the-blank edition)</p></div>
+    <div class="who-grid">
+
+      <div class="profile" id="caty">
+        <div>
+          <div class="pic"><img src="assets/caty-studio.jpg" alt="Caty Palsson"></div>
+          <p class="who-q">Who is she?</p>
+        </div>
+        <dl class="fields">
+          <dt>Name</dt><dd>Caty Palsson</dd>
+          <dt>Position</dt><dd>co-founder, edit haus</dd>
+          <dt>Signature traits</dt><dd>classy, elevated, always on brand</dd>
+          <dt>Lucky charm</dt><dd>a matching set</dd>
+        </dl>
+      </div>
+
+      <div class="profile" id="hannah">
+        <div>
+          <div class="pic"><img src="assets/hannah-studio.jpg" alt="Hannah Folkers"></div>
+          <p class="who-q">Who is she?</p>
+        </div>
+        <dl class="fields">
+          <dt>Name</dt><dd>Hannah Folkers</dd>
+          <dt>Position</dt><dd>co-founder, edit haus</dd>
+          <dt>Signature traits</dt><dd>calm in chaos, detail-obsessed, makes it make sense</dd>
+          <dt>Lucky charm</dt><dd>her morning routine</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="lets"><span class="it">let's work together!</span></div>
+  </div>
+</section>
+
+<!-- ============ STORY STRIP ============ -->
+<section class="strip" aria-label="From our stories">
+  <div class="wrap strip-grid">
+    <figure><img src="assets/story-1.jpg" alt="Edit Haus story: be honest"></figure>
+    <figure><img src="assets/story-2.jpg" alt="Edit Haus story: your brand doesn't need more content, it needs a point of view"></figure>
+    <figure><img src="assets/story-3.jpg" alt="Edit Haus story: can't tell you who, can show you how"></figure>
+    <figure><img src="assets/story-dm-us.jpg" alt="Edit Haus story: your brand could be next"></figure>
+  </div>
+</section>
+
+<!-- ============ VISUAL IDENTITY / PORTFOLIO ============ -->
+<section class="vi" id="portfolio">
+  <div class="wrap">
+    <div class="vi-top">
+      <h2 class="h">Visual<br>identity</h2>
+      <p>Turning everyday moments into content that makes your brand unforgettable.</p>
+    </div>
+    <p class="quote">your brand should feel like <b>you</b> and like your dream customer.</p>
+    <p class="ba-title">Social media refresh + content direction</p>
+    <div class="ba">
+      <figure class="before">
+        <div class="phone before"><img class="scr" src="assets/ba-before.jpg" alt="Instagram profile before the Edit Haus refresh: white logo, mixed content"></div>
+        <figcaption>BEFORE</figcaption>
+      </figure>
+      <ul class="checks mid">
+        <li>Recognizable at thumbnail size</li>
+        <li>A bio that says what you get</li>
+        <li>Highlights that build trust</li>
+        <li>A grid that feels cohesive</li>
+        <li>Visitors who turn into followers</li>
+        <li class="note">a refresh is more than a prettier feed. it's a look people remember after they've left your page.</li>
+      </ul>
+      <figure class="after">
+        <div class="phone after"><img class="scr" src="assets/ba-after.jpg" alt="Instagram profile after the Edit Haus refresh: burgundy monogram, plaid highlights and branded grid"></div>
+        <figcaption>AFTER</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTENT CREATION ============ -->
+<section class="content" id="content">
+  <div class="wrap">
+    <div class="sec-title"><span class="it">content creation</span></div>
+    <div class="cgrid">
+      <img src="assets/post-1.jpg" alt="Edit Haus carousel cover: your first 3 seconds are a job interview">
+      <img src="assets/post-2.jpg" alt="Edit Haus carousel cover: what actually happens after you say let's do this">
+      <img src="assets/post-3.jpg" alt="Edit Haus carousel cover: people aren't scrolling for you">
+    </div>
+    <div class="cbottom">
+      <div>
+        <h3 class="h">Edit Haus</h3>
+        <p>As a social + creator marketing studio, we plan, script, shoot, edit and post content that feels native to each platform: scroll-stopping hooks, cohesive design and creator partnerships that turn viewers into loyal customers.</p>
+        <div class="circles"><div><b>2</b><span>brains</span></div><div><b>1</b><span>haus</span></div></div>
+      </div>
+      <div class="pic">
+        <img src="assets/post-4.jpg" alt="Edit Haus post: brands, your holiday content should be filmed before Halloween">
+        <img src="assets/post-5.jpg" alt="Edit Haus post: brand name plus what you sell">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker-zone" aria-hidden="true">
+  <div class="ticker"><div class="track">
+    <span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span><span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span><span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span><span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span>
+    <span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span><span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span><span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span><span>Branding<i>/</i></span><span>Content<i>/</i></span><span>Strategy<i>/</i></span>
+  </div></div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-title"><span class="it">our services &amp; pricing</span><p>à la carte, so you only pay for what your brand needs.</p></div>
+
+<article class="svc wide feat"><div class="svc-h"><span class="num">&#9733;</span><h3>Social media audit</h3><span class="tag">start here</span></div><p class="desc">A 20-minute call: a quick look at where your socials stand.</p><ul class="plist"><li><span class="nm">Social media audit &middot; 20 min call</span><span class="pr">$50<small>/call</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20social%20media%20audit%20with%20Edit%20Haus">BOOK A CALL</a></article>
+
+    <div class="sub-h"><h3 class="h">Monthly <span class="it">services</span></h3></div>
+    <div class="sgrid cols">
+<article class="svc"><div class="svc-h"><span class="num">01</span><h3>Instagram &amp; Facebook</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">Daily posting, trial reels, stories &amp; highlights</span><span class="pr">$2,500<small>/mo</small></span></li><li><span class="nm">Content planning, scripting &amp; editing, built around what’s selling</span><span class="pr">$2,000<small>/mo</small></span></li><li><span class="nm">Paid ads management: strategy, hook &amp; angle testing, budget pacing, weekly results</span><span class="pr">$1,800<small>/mo</small></span></li><li><span class="nm">Ad creative: statics &amp; video edits in 9:16 and 4:5 for every ad</span><span class="pr">$2,000<small>/mo</small></span></li><li><span class="nm">Analytics &amp; growth reporting: what’s working and where the money goes</span><span class="pr">$750<small>/mo</small></span></li><li><span class="nm">Community management: responding to comments &amp; DMs</span><span class="pr">$1,000<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+<article class="svc"><div class="svc-h"><span class="num">02</span><h3>TikTok Shop &amp; LIVEs</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">TikTok Shop backend: listings, orders, shop score, campaign registrations</span><span class="pr">$1,500<small>/mo</small></span></li><li><span class="nm">LIVE management: scheduling, live sellers, performance tracking</span><span class="pr">$1,500<small>/mo</small></span></li><li><span class="nm">LIVE seller training: on-brand talking points, color matching, product demos</span><span class="pr">$750<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+<article class="svc"><div class="svc-h"><span class="num">03</span><h3>Creators &amp; UGC</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">Creator sourcing &amp; vetting, plus influencer outreach alongside your team</span><span class="pr">$1,500<small>/mo</small></span></li><li><span class="nm">Briefs, scripts &amp; hooks for every creator</span><span class="pr">$1,000<small>/mo</small></span></li><li><span class="nm">Reviewing, editing &amp; revision rounds before anyone gets paid</span><span class="pr">$750<small>/mo</small></span></li><li><span class="nm">Building and managing a roster of 10–20 repeat creators</span><span class="pr">$1,000<small>/mo</small></span></li><li><span class="nm">PR packages &amp; sample-send coordination</span><span class="pr">$500<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+<article class="svc"><div class="svc-h"><span class="num">04</span><h3>Brand &amp; Design</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">Brand identity across every channel</span><span class="pr">$1,000<small>/mo</small></span></li><li><span class="nm">Monthly creator guide</span><span class="pr">$500<small>/mo</small></span></li><li><span class="nm">Graphic design for every channel</span><span class="pr">$1,000<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+<article class="svc"><div class="svc-h"><span class="num">05</span><h3>Shoots</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">Biweekly shoots: planning, models &amp; photographer, styling, sizing, comms</span><span class="pr">$2,000<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+<article class="svc"><div class="svc-h"><span class="num">06</span><h3>Website &amp; Shopping</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">Shopify landing pages for ads</span><span class="pr">$1,000<small>/mo</small></span></li><li><span class="nm">Swatch highlights &amp; color guides</span><span class="pr">$500<small>/mo</small></span></li><li><span class="nm">IG Shop product tagging</span><span class="pr">$250<small>/mo</small></span></li><li><span class="nm">ShopMy management</span><span class="pr">$500<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+<article class="svc"><div class="svc-h"><span class="num">07</span><h3>App Management, Email &amp; Automation</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">ManyChat welcome DM &amp; email capture (10% offer), ongoing</span><span class="pr">$250<small>/mo</small></span></li><li><span class="nm">Klaviyo campaigns &amp; flow optimization</span><span class="pr">$1,500<small>/mo</small></span></li><li><span class="nm">Instagram broadcast channel</span><span class="pr">$250<small>/mo</small></span></li><li><span class="nm">ShopMy apps &amp; plug-ins</span><span class="pr">$250<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+<article class="svc"><div class="svc-h"><span class="num">08</span><h3>Data Analytics &amp; Tracking</h3><span class="tag">monthly</span></div><ul class="plist"><li><span class="nm">Pixel/conversion tracking, ad spend tracking, weekly KPI reporting</span><span class="pr">$1,200<small>/mo</small></span></li></ul><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+    </div>
+
+    <div class="sub-h"><h3 class="h">One-time <span class="it">builds</span></h3></div>
+    <div class="sgrid">
+<article class="svc wide"><div class="svc-h"><span class="num">09</span><h3>Setup &amp; project work</h3><span class="tag">billed once</span></div><div class="ogrid"><div class="og"><h4>Brand &amp; Design</h4><ul class="plist"><li><span class="nm">Packaging design: new product boxes, packaging &amp; insert cards (as needed)</span><span class="pr">$2,500</span></li><li><span class="nm">Seasonal assets for TikTok</span><span class="pr">$1,500</span></li></ul></div><div class="og"><h4>Shoots</h4><ul class="plist"><li><span class="nm">Brand shoot: casting, shot lists, planning</span><span class="pr">$2,500</span></li><li><span class="nm">Ad shoot: planning, models, styling &amp; on-set coordination</span><span class="pr">$1,500</span></li></ul></div><div class="og"><h4>Website &amp; Shopping</h4><ul class="plist"><li><span class="nm">IG Shop setup</span><span class="pr">$750</span></li><li><span class="nm">ShopMy setup</span><span class="pr">$750</span></li></ul></div><div class="og"><h4>App Management, Email &amp; Automation</h4><ul class="plist"><li><span class="nm">ManyChat welcome DM &amp; email capture setup (10% offer)</span><span class="pr">$750</span></li><li><span class="nm">Klaviyo flow build: welcome, abandoned cart, post-purchase, win-back</span><span class="pr">$3,000</span></li></ul></div></div><a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a></article>
+    </div>
+
+    <div class="custom">
+      <span class="it">custom retainer bundles available.</span>
+      <p>Want a few of these working together? We'll build a bundle around your brand.</p>
+      <a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a>
+    </div>
+    <p class="terms">3-month minimum · billed monthly, in advance · up to 2 rounds of revisions per deliverable</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <span class="mono">EH</span>
+    <h2 class="h">Let's make your brand<span class="it">feel worth following.</span></h2>
+    <p class="s">Tell us what you're building and we'll tell you how we'd make it unmissable.</p>
+    <a class="btn" href="mailto:caitlyn.palsson@gmail.com?subject=Book%20a%20call%20with%20Edit%20Haus">BOOK A CALL</a>
+    <div class="links">
+      <a href="mailto:caitlyn.palsson@gmail.com">caitlyn.palsson@gmail.com</a>
+      <a href="https://www.instagram.com/the____edithaus/" target="_blank" rel="noopener">@the____edithaus</a>
+    </div>
+    <div class="foot"><span>Edit Haus</span><span>Social + creator marketing studio</span><span>© 2026</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
